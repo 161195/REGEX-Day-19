@@ -19,6 +19,11 @@ namespace RegularExpression
             RegexValidate.LastName(lastname);
             Console.ReadLine();
 
+            Console.Write("Enter Email ID: ");   //taking user input of Email ID
+            string Email = Console.ReadLine();
+            RegexValidate.EmailValid(Email);
+            Console.ReadLine();
+
         }
     }
 }
