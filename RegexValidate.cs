@@ -55,6 +55,23 @@ namespace RegularExpression
             }
 
         }
+        //This method will check whether phone no is valid or not
+        public static void MobileNumValid(string number)
+        { 
+            //Regular expression of mobile number
+            string Mobnumber = "^[0-9]{1,2}[ ]{1}[0-9]{10}$";
+            Regex regex = new Regex(Mobnumber);
+
+            if (regex.IsMatch(number))
+            {
+                Console.WriteLine("Mobile Number is valid");
+            }
+            else
+            {
+                Console.WriteLine("Mobile number is Invalid,Please Enter Valid MObile Number format.");
+            }
+
+        }
 
     }
 }

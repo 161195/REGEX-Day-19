@@ -23,6 +23,13 @@ namespace RegularExpression
             string Email = Console.ReadLine();
             RegexValidate.EmailValid(Email);
             Console.ReadLine();
+          
+            Console.WriteLine("Enter mobile number in this format : 00 0000000000"); //taking user input of Mobile No
+            string MobileNo = Console.ReadLine();
+            RegexValidate.MobileNumValid(MobileNo);
+            Console.ReadLine();
+
+            
 
         }
     }
