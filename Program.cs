@@ -29,7 +29,14 @@ namespace RegularExpression
             RegexValidate.MobileNumValid(MobileNo);
             Console.ReadLine();
 
-            
+            Console.Write("Enter Email ID: ");   //taking user input of password1
+            string password1= Console.ReadLine();
+            RegexValidate.EmailValid(password1);
+            Console.ReadLine();
+
+
+
+
 
         }
     }
